@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transferências</title>
+  <link rel="stylesheet" href="contas.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<header>
+  <nav>
+    <a class="logo" href="/">Registros Bancários</a>
+    <div class="mobile-menu">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <ul class="nav-list">
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Contato</a></li>
+      <li><a href="#">Transferências</a></li>
+      <li><a href="#">Sobre</a></li>
+      
+    </ul>
+  </nav>
+</header>
+<body>
+  
+  <div class="container">
+    <div class="header">
+      <span class="title">Cadastro de Transferências</span>
+      <button onclick="openMenu()" id="new">Nova Conta</i></button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Destinatário</th>
+            <th>Nome da Conta</th>
+            <th>Número da Conta</th>
+            <th>Valor</th>
+            <th class="motion">Editar</th>
+            <th class="motion">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container-menu">
+      <div class="menu">
+        <form>
+          <label for="m-nome">Destinatário</label>
+          <input id="m-nome" type="text" required />
+
+          <label for="m-nome-conta">Nome da Conta</label>
+          <input id="m-nome-conta" type="text" required />
+  
+          <label for="m-conta">Conta</label>
+          <input id="m-conta" type="number" required />
+  
+          <label for="m-valor">Valor</label>
+          <input id="m-valor" type="number" required />
+          <button id="buttonSave">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="contas.js"></script>
+</body>
+
+</html>
